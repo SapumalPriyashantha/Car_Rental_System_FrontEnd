@@ -1,0 +1,27 @@
+@import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
+
+body > header > nav  {
+    position: relative;
+    height: 60px;
+}
+body > header > nav > div:nth-child(1){
+    position: absolute;
+    left: 150px;
+}
+body > header > nav > div:nth-child(1)>a{
+    font-family:"Bodoni MT Black" !important;
+}
+body > header > nav > div:nth-child(2) > ul {
+    position: absolute;
+    right: 150px;
+    bottom: 10px;
+}
+
+body > header > nav > div:nth-child(2) > ul > li {
+    padding: 0 10px 0 10px;
+}
+
+body > main > div {
+    height: 500px;
+    border: 1px solid black;
+}
