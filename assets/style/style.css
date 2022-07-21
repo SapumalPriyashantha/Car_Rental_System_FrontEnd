@@ -1,16 +1,20 @@
 @import url("http://fonts.googleapis.com/css?family=Oswald:400,300,700");
 
-body > header > nav  {
+/*Header*/
+body > header > nav {
     position: relative;
     height: 60px;
 }
-body > header > nav > div:nth-child(1){
+
+body > header > nav > div:nth-child(1) {
     position: absolute;
     left: 150px;
 }
-body > header > nav > div:nth-child(1)>a{
-    font-family:"Bodoni MT Black" !important;
+
+body > header > nav > div:nth-child(1) > a {
+    font-family: Bahnschrift !important;
 }
+
 body > header > nav > div:nth-child(2) > ul {
     position: absolute;
     right: 150px;
@@ -21,7 +25,49 @@ body > header > nav > div:nth-child(2) > ul > li {
     padding: 0 10px 0 10px;
 }
 
-body > main > div {
-    height: 500px;
+
+/*Main*/
+/*Home*/
+body > main > div:nth-child(1) {
+    height: 460px;
+}
+body > main > div:nth-child(1) {
+   position: relative;
+    border: 1px solid blue;
+}
+body > main > div:nth-child(1)>div#homeImg {
+    position: relative;
+    top: 60px;
+    height: 400px;
+    border: 1px solid red;
+}
+
+
+/*About Us*/
+body > main > div:nth-child(2){
     border: 1px solid black;
+    height: 612px;
+    position: relative;
+}
+body > main > div:nth-child(2)>h2:nth-child(2){
+    position: absolute;
+    top: 109px;
+    left: 696px;
+}
+body > main > div:nth-child(2)>div:nth-child(3){
+    height: 350px;
+    width: 537px;
+    position: relative;
+    top: 130px;
+    left: 160px;
+}
+body > main > div:nth-child(2)>div:nth-child(4){
+    height: 209px;
+    width: 520px;
+    position: relative;
+    top: -157px;
+    left: 800px;
+}
+body > main > div:nth-child(2)>div:nth-child(4)>p{
+    font-family: "Century Gothic" !important;
 }

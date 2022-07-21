@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Car Rental System</title>
+    <!--normalize css-->
     <link href="assets/css/normalize.css " rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!--external fronts-->
     <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link href="assets/style/style.css " rel="stylesheet">
+    <style>
+        body > main > div:nth-child(1)>div#homeImg {
+            background-image: url("assets/img/home.png");
+            background-size: cover;
+        }
+        body > main > div:nth-child(2)>div:nth-child(3){
+            background-image: url("assets/img/undraw_electric_car_b7hl.png");
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
 <!--header start-->
@@ -52,9 +66,29 @@
         </div>
     </nav>
 </header>
-<main>
-    <div></div>
-    <div></div>
+<main class="container-fluid">
+    <!--Home-->
+    <div>
+        <dfn id="Home"></dfn>
+        <div id="homeImg"></div>
+    </div>
+
+    <!--About Us-->
+    <div>
+        <dfn id="AboutUs"></dfn>
+        <h2>About Us</h2>
+        <div></div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, assumenda atque corporis dolorem
+                laboriosam necessitatibus nisi nobis, quam rem repudiandae soluta, sunt tempora voluptatibus! Aut cumque
+                doloribus quo saepe tempora?
+            </p>
+            <p>Asperiores, aspernatur corporis deserunt est hic, inventore laudantium, maxime mollitia natus nisi
+                placeat quam recusandae vitae! Ab dolorem enim error excepturi explicabo, mollitia numquam ratione sit!
+                Dolorem tempora temporibus tenetur!
+            </p>
+        </div>
+    </div>
 </main>
 <footer></footer>
 
