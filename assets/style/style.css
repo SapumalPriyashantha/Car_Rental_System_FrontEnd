@@ -33,19 +33,18 @@ body > main > div:nth-child(1) {
 }
 body > main > div:nth-child(1) {
    position: relative;
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 body > main > div:nth-child(1)>div#homeImg {
     position: relative;
     top: 60px;
     height: 400px;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 
 /*About Us*/
 body > main > div:nth-child(2){
-    border: 1px solid black;
     height: 612px;
     position: relative;
 }
@@ -70,4 +69,37 @@ body > main > div:nth-child(2)>div:nth-child(4){
 }
 body > main > div:nth-child(2)>div:nth-child(4)>p{
     font-family: "Century Gothic" !important;
+}
+
+
+/*Services*/
+body > main > div:nth-child(3){
+    height: 700px;
+    position: relative;
+}
+body > main > div:nth-child(3)>h2:nth-child(2){
+    position: absolute;
+    top: 109px;
+    left: 696px;
+}
+body > main > div:nth-child(3)>div:nth-child(3){
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+body > main > div:nth-child(3)>div:nth-child(4){
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+}
+body > main > div:nth-child(3)>div:nth-child(3),div:nth-child(4)>p{
+    font-family: "Century Gothic" !important;
+}
+body > main > div:nth-child(3)>div:nth-child(3)>h2:nth-child(1){
+    font-family: Ebrima !important;
+}
+body > main > div:nth-child(3)>div:nth-child(4)>h2:nth-child(1){
+    font-family: Ebrima !important;
 }
