@@ -76,6 +76,7 @@ body > main > div:nth-child(2)>div:nth-child(4)>p{
 body > main > div:nth-child(3){
     height: 700px;
     position: relative;
+    /*border: 1px solid black;*/
 }
 body > main > div:nth-child(3)>h2:nth-child(2){
     position: absolute;
@@ -101,5 +102,65 @@ body > main > div:nth-child(3)>div:nth-child(3)>h2:nth-child(1){
     font-family: Ebrima !important;
 }
 body > main > div:nth-child(3)>div:nth-child(4)>h2:nth-child(1){
+    font-family: Ebrima !important;
+}
+
+
+/*Car*/
+/*Car Listing*/
+body > main > div:nth-child(4){
+    width: 79vw;
+    height: 185vh;
+    border: 1px solid black;
+    position: relative;
+    left: 130px;
+}
+body > main > div:nth-child(4)>h2{
+    position: absolute;
+    top: 109px;
+    left: 553px;
+}
+body > main > div:nth-child(4)>div:nth-child(3){
+    /*border: 1px solid red;*/
+    height: 50vh;
+    top: 165px;
+    position: relative;
+}
+body > main > div:nth-child(4)>div:nth-child(4){
+    /*border: 1px solid red;*/
+    height: 50vh;
+    top: 200px;
+    position: relative;
+}
+body > main > div:nth-child(4)>div:nth-child(5){
+    /*border: 1px solid red;*/
+    height: 50vh;
+    top: 240px;
+    position: relative;
+}
+body > main > div:nth-child(4)>div>div{
+    /*border: 1px solid blue;*/
+    height: 310px;
+    position: absolute;
+    top: 46px;
+}
+body > main > div:nth-child(4)>div:nth-child(5)>div:nth-child(2){
+    width: 79vw;
+}
+body > main > div:nth-child(4)>div>div>div{
+    /*border: 1px solid green;*/
+    width: calc(100% / 5);
+}
+body > main > div:nth-child(4)>div>div>div>div{
+    height: 255px;
+    width: 240px;
+    /*border: 1px solid brown;*/
+}
+body > main > div:nth-child(4)>div>h2{
+    position: absolute;
+    left: 571px;
+    font-family: Ebrima !important;
+}
+body > main > div:nth-child(4)>div>div>div>h5{
     font-family: Ebrima !important;
 }
