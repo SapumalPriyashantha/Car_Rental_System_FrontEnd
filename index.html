@@ -99,7 +99,6 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#CarListing">Car Listing</a>
-                        <a class="dropdown-item" href="#CarDetails">Car Details</a>
                         <a class="dropdown-item" href="#CarBooking">Car Booking</a>
                     </div>
                 </li>
@@ -232,11 +231,169 @@
                 </div>
             </div>
         </div>
+        <!--Car Booking-->
+        <div>
+            <dfn id="CarBooking"></dfn>
+            <h2>Car Booking</h2>
+            <div>
+                <div class="container shadow min-vh-100 py-2">
+                    <div class="row" >
+                        <div class="col-6">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="pickUpdate">Pick up Date</label>
+                                    <input id="pickUpdate" class="form-control" type="date" />
+                                    <span id="startDateSelected"></span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="returnDate">Return Date</label>
+                                    <input id="returnDate" class="form-control" type="date" />
+                                    <span id="endDateSelected"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="todayDate">Today Date</label>
+                                    <input id="todayDate" class="form-control" type="date" />
+                                    <span id="selectTodayDate"></span>
+
+                                </div>
+                                <div class="form-group col-md-6">
+                                        <label for="time">Pick up time</label>
+                                        <input class="form-control" type="time" id="time" />
+                                        <span id="selectPickUpTime"></span>
+                                </div>
+                             </div>
+
+                            <div class="form-row">
+                                <div class="col-4">
+                                    <label  for="type">Select Vehicle Type</label>
+                                    <select  id="type">
+                                        <option selected>Type...</option>
+                                        <option value="1">General</option>
+                                        <option value="2">Premium</option>
+                                        <option value="3">Luxury</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label  for="transmission">Select Transmission Type</label>
+                                    <select  id="transmission">
+                                        <option selected>Transmission...</option>
+                                        <option value="1">Auto</option>
+                                        <option value="2">Manual</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <button type="button" class="btn ">Check</button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <form class="form-inline">
+                                    <div class="col-6">
+                                        <label class="form-label" for="waiverPayment">Waiver Payment</label>
+                                        <input class="form-control" id="waiverPayment">
+                                    </div>
+                                </form>
+                                <form class="col-6">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlFile1">Add Slip File :</label>
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="row">
+                               <div class="form-check form-check-inline">
+                                   <label >Do you wanna driver ?</label>
+                               </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="YES" value="YES">
+                                    <label class="form-check-label" for="YES">YES</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="NO" value="NO">
+                                    <label class="form-check-label" for="NO">NO</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-4">
+                                            <input type="text" class="form-control" placeholder="User name">
+                                        </div>
+                                        <div class="col-4">
+                                            <input type="text" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="col-4">
+                                            <button type="button" class="btn ">Done</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Registration Number</th>
+                                    <th scope="col">Brand</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Transmission</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>Larry</td>
+                                    <td>the Bird</td>
+                                    <td>@twitter</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </main>
 <footer></footer>
 
 <script src="assets/jQuery/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+    let startDate = document.getElementById('pickUpdate')
+    let endDate = document.getElementById('returnDate')
+
+    startDate.addEventListener('change',(e)=>{
+        let startDateVal = e.target.value
+        document.getElementById('startDateSelected').innerText = startDateVal
+    })
+
+    endDate.addEventListener('change',(e)=>{
+        let endDateVal = e.target.value
+        document.getElementById('endDateSelected').innerText = endDateVal
+    })
+
+    let time = document.getElementById('time')
+    time.addEventListener('change',(e)=>{
+        let time = e.target.value
+        document.getElementById('selectPickUpTime').innerText = time
+    })
+</script>
 </body>
 </html>
