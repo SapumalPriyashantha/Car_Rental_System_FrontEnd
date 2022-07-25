@@ -469,7 +469,7 @@ body > main > div:nth-child(6) > div:nth-child(4) > div > form > div:nth-child(5
 /*As a customer*/
 body > main > div:nth-child(7) {
     width: 79vw;
-    height: 150vh;
+    height: 115vh;
     border: 1px solid black;
     position: relative;
     left: 145px;
@@ -529,4 +529,50 @@ body > main > div:nth-child(7) >div:nth-child(4)>form>div:nth-child(7){
     /*border: 1px solid red;*/
     position: relative;
     top: 200px;
+}
+
+/*As a driver*/
+body > main > div:nth-child(8){
+    width: 79vw;
+    height: 65vh;
+    border: 1px solid black;
+    position: relative;
+    left: 145px;
+}
+body > main > div:nth-child(8) > h2 {
+    position: absolute;
+    top: 70px;
+    left: 500px;
+    /*z-index: 1;*/
+}
+body > main > div:nth-child(8) >div:nth-child(3){
+    background-color: #e6e8e5;
+    position: absolute;
+    width: 950px;
+    height: 290px;
+    left: 130px;
+    top: 120px;
+}
+body > main > div:nth-child(8) >div:nth-child(4)>form{
+    /*border: 1px solid black;*/
+    position: relative;
+    left: 180px;
+    width: 850px;
+    height: 400px;
+    top: 25px;
+}
+body > main > div:nth-child(8) >div:nth-child(4)>form>div:nth-child(1){
+    /*border: 1px solid red;*/
+    position: relative;
+    top: 120px;
+}
+body > main > div:nth-child(8) >div:nth-child(4)>form>div:nth-child(2){
+    /*border: 1px solid red;*/
+    position: relative;
+    top: 140px;
+}
+body > main > div:nth-child(8) >div:nth-child(4)>form>button:nth-child(3){
+    /*border: 1px solid red;*/
+    position: relative;
+    top: 150px;
 }
