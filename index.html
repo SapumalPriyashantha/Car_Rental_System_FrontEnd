@@ -122,8 +122,8 @@
                        aria-expanded="false">Sing In
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                        <a class="dropdown-item" href="#signInCustomer">As a customer</a>
-                        <a class="dropdown-item" href="#signIndriver">As a driver</a>
+                        <a class="dropdown-item" href="#signInCustomer" id="signAsCustomerDropDown">As a customer</a>
+                        <a class="dropdown-item" href="#signIndriver" id="signAsDriverDropDown">As a driver</a>
                     </div>
                 </li>
             </ul>
@@ -132,13 +132,13 @@
 </header>
 <main class="container-fluid">
     <!--Home-->
-    <div>
+    <div id="homeDiv">
         <dfn id="Home"></dfn>
         <div id="homeImg"></div>
     </div>
 
     <!--About Us-->
-    <div>
+    <div id="aboutUsDiv">
         <dfn id="AboutUs"></dfn>
         <h2>About Us</h2>
         <div></div>
@@ -155,7 +155,7 @@
     </div>
 
     <!--Services-->
-    <div class="row">
+    <div class="row" id="servicesDiv">
         <dfn id="Services"></dfn>
         <h2>Services</h2>
         <div class="col-4">
@@ -179,7 +179,7 @@
 
     <!--Car-->
         <!--Car Listing-->
-        <div>
+        <div id="carListingDiv">
             <dfn id="CarListing"></dfn>
             <h2>Car Listing</h2>
             <div id="general">
@@ -247,7 +247,7 @@
             </div>
         </div>
         <!--Car Booking-->
-        <div>
+        <div id="carBookingDiv">
             <dfn id="CarBooking"></dfn>
             <h2>Car Booking</h2>
             <div>
@@ -385,7 +385,7 @@
         </div>
 
     <!--Contact-->
-    <div class="row">
+    <div class="row" id="contactDiv">
         <dfn id="Contact"></dfn>
         <h2>Contact</h2>
         <div class="col-6">
@@ -433,7 +433,7 @@
 
     <!--SingIn-->
         <!--As a customer-->
-    <div class="row">
+    <div class="row" id="signAsaCustomerDiv">
         <dfn id="signInCustomer"></dfn>
         <h2>SignIn Customer</h2>
         <div></div>
@@ -516,7 +516,7 @@
         </div>
     </div>
         <!--As a driver-->
-    <div class="row">
+    <div class="row" id="signAsaCDriverDiv">
         <dfn id="signIndriver"></dfn>
         <h2>SignIn Driver</h2>
         <div></div>
@@ -578,6 +578,28 @@
         let customer_regi_dateVal = e.target.value
         document.getElementById('customer_regi_dateSelected').innerText = customer_regi_dateVal
     })
+
+    $( "#signAsCustomerDropDown" ).click(function() {
+        $("#signAsaCustomerDiv").css("display", "block");
+        $("#homeDiv").css("display", "none");
+        $("#aboutUsDiv").css("display", "none");
+        $("#servicesDiv").css("display", "none");
+        $("#carListingDiv").css("display", "none");
+        $("#carBookingDiv").css("display", "none");
+        $("#contactDiv").css("display", "none");
+        $("#signAsaCDriverDiv").css("display", "none");
+    });
+
+    $( "#signAsDriverDropDown" ).click(function() {
+        $("#signAsaCDriverDiv").css("display", "block");
+        $("#homeDiv").css("display", "none");
+        $("#aboutUsDiv").css("display", "none");
+        $("#servicesDiv").css("display", "none");
+        $("#carListingDiv").css("display", "none");
+        $("#carBookingDiv").css("display", "none");
+        $("#contactDiv").css("display", "none");
+        $("#signAsaCustomerDiv").css("display", "none");
+    });
 </script>
 </body>
 </html>

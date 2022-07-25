@@ -470,13 +470,14 @@ body > main > div:nth-child(6) > div:nth-child(4) > div > form > div:nth-child(5
 body > main > div:nth-child(7) {
     width: 79vw;
     height: 115vh;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     position: relative;
     left: 145px;
+    display: none;
 }
 body > main > div:nth-child(7) > h2 {
     position: absolute;
-    top: 30px;
+    top: 60px;
     left: 500px;
 }
 body > main > div:nth-child(7) >div:nth-child(3){
@@ -485,7 +486,7 @@ body > main > div:nth-child(7) >div:nth-child(3){
     width: 950px;
     height: 720px;
     left: 130px;
-    top: 72px;
+    top: 115px;
 }
 body > main > div:nth-child(7) >div:nth-child(4)>form{
     /*border: 1px solid black;*/
@@ -493,7 +494,7 @@ body > main > div:nth-child(7) >div:nth-child(4)>form{
     left: 180px;
     width: 850px;
     height: 750px;
-    top: 25px;
+    top: 60px;
 }
 body > main > div:nth-child(7) >div:nth-child(4)>form>div:nth-child(1){
     /*border: 1px solid red;*/
@@ -535,9 +536,10 @@ body > main > div:nth-child(7) >div:nth-child(4)>form>div:nth-child(7){
 body > main > div:nth-child(8){
     width: 79vw;
     height: 65vh;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     position: relative;
     left: 145px;
+    display: none;
 }
 body > main > div:nth-child(8) > h2 {
     position: absolute;
