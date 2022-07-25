@@ -31,11 +31,13 @@ body > header > nav > div:nth-child(2) > ul > li {
 body > main > div:nth-child(1) {
     height: 460px;
 }
+
 body > main > div:nth-child(1) {
-   position: relative;
+    position: relative;
     /*border: 1px solid blue;*/
 }
-body > main > div:nth-child(1)>div#homeImg {
+
+body > main > div:nth-child(1) > div#homeImg {
     position: relative;
     top: 60px;
     height: 400px;
@@ -44,141 +46,163 @@ body > main > div:nth-child(1)>div#homeImg {
 
 
 /*About Us*/
-body > main > div:nth-child(2){
+body > main > div:nth-child(2) {
     height: 612px;
     position: relative;
 }
-body > main > div:nth-child(2)>h2:nth-child(2){
+
+body > main > div:nth-child(2) > h2:nth-child(2) {
     position: absolute;
     top: 109px;
     left: 696px;
 }
-body > main > div:nth-child(2)>div:nth-child(3){
+
+body > main > div:nth-child(2) > div:nth-child(3) {
     height: 350px;
     width: 537px;
     position: relative;
     top: 130px;
     left: 160px;
 }
-body > main > div:nth-child(2)>div:nth-child(4){
+
+body > main > div:nth-child(2) > div:nth-child(4) {
     height: 209px;
     width: 520px;
     position: relative;
     top: -157px;
     left: 800px;
 }
-body > main > div:nth-child(2)>div:nth-child(4)>p{
+
+body > main > div:nth-child(2) > div:nth-child(4) > p {
     font-family: "Century Gothic" !important;
 }
 
 
 /*Services*/
-body > main > div:nth-child(3){
+body > main > div:nth-child(3) {
     height: 700px;
     position: relative;
     /*border: 1px solid black;*/
 }
-body > main > div:nth-child(3)>h2:nth-child(2){
+
+body > main > div:nth-child(3) > h2:nth-child(2) {
     position: absolute;
     top: 109px;
     left: 696px;
 }
-body > main > div:nth-child(3)>div:nth-child(3){
+
+body > main > div:nth-child(3) > div:nth-child(3) {
     height: 300px;
     position: absolute;
     top: 200px;
     left: 200px;
 }
-body > main > div:nth-child(3)>div:nth-child(4){
+
+body > main > div:nth-child(3) > div:nth-child(4) {
     height: 300px;
     position: absolute;
     top: 200px;
     right: 200px;
 }
-body > main > div:nth-child(3)>div:nth-child(3),div:nth-child(4)>p{
+
+body > main > div:nth-child(3) > div:nth-child(3), div:nth-child(4) > p {
     font-family: "Century Gothic" !important;
 }
-body > main > div:nth-child(3)>div:nth-child(3)>h2:nth-child(1){
+
+body > main > div:nth-child(3) > div:nth-child(3) > h2:nth-child(1) {
     font-family: Ebrima !important;
 }
-body > main > div:nth-child(3)>div:nth-child(4)>h2:nth-child(1){
+
+body > main > div:nth-child(3) > div:nth-child(4) > h2:nth-child(1) {
     font-family: Ebrima !important;
 }
 
 
 /*Car*/
 /*Car Listing*/
-body > main > div:nth-child(4){
+body > main > div:nth-child(4) {
     width: 79vw;
     height: 185vh;
     border: 1px solid black;
     position: relative;
     left: 130px;
 }
-body > main > div:nth-child(4)>h2{
+
+body > main > div:nth-child(4) > h2 {
     position: absolute;
     top: 109px;
     left: 553px;
 }
-body > main > div:nth-child(4)>div:nth-child(3){
+
+body > main > div:nth-child(4) > div:nth-child(3) {
     /*border: 1px solid red;*/
     height: 50vh;
     top: 165px;
     position: relative;
 }
-body > main > div:nth-child(4)>div:nth-child(4){
+
+body > main > div:nth-child(4) > div:nth-child(4) {
     /*border: 1px solid red;*/
     height: 50vh;
     top: 200px;
     position: relative;
 }
-body > main > div:nth-child(4)>div:nth-child(5){
+
+body > main > div:nth-child(4) > div:nth-child(5) {
     /*border: 1px solid red;*/
     height: 50vh;
     top: 240px;
     position: relative;
 }
-body > main > div:nth-child(4)>div>div{
+
+body > main > div:nth-child(4) > div > div {
     /*border: 1px solid blue;*/
     height: 310px;
     position: absolute;
     top: 46px;
 }
-body > main > div:nth-child(4)>div:nth-child(5)>div:nth-child(2){
+
+body > main > div:nth-child(4) > div:nth-child(5) > div:nth-child(2) {
     width: 79vw;
 }
-body > main > div:nth-child(4)>div>div>div{
+
+body > main > div:nth-child(4) > div > div > div {
     /*border: 1px solid green;*/
     width: calc(100% / 5);
 }
-body > main > div:nth-child(4)>div>div>div>div{
+
+body > main > div:nth-child(4) > div > div > div > div {
     height: 255px;
     width: 240px;
     /*border: 1px solid brown;*/
 }
-body > main > div:nth-child(4)>div>h2{
+
+body > main > div:nth-child(4) > div > h2 {
     position: absolute;
     left: 571px;
     font-family: Ebrima !important;
 }
-body > main > div:nth-child(4)>div>div>div>h5{
+
+body > main > div:nth-child(4) > div > div > div > h5 {
     font-family: Ebrima !important;
 }
 
 /*Car Booking*/
-body > main > div:nth-child(5){
+body > main > div:nth-child(5) {
     width: 79vw;
     height: 110vh;
     /*border: 1px solid black;*/
     position: relative;
     left: 130px;
 }
-body > main > div:nth-child(5)>h2{
+
+body > main > div:nth-child(5) > h2 {
     position: absolute;
     top: 109px;
     left: 553px;
 }
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1){
+
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) {
     /*border: 1px solid red;*/
     width: 79vw;
     height: 570px;
@@ -186,7 +210,8 @@ body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1){
     right: 38px;
     top: 150px;
 }
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-child(1){
+
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(1) {
     /*border: 1px solid black;*/
     width: 79vw;
     height: 570px;
@@ -195,7 +220,8 @@ body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-chi
     background-color: #e6e8e5;
     /*border-radius: 40px 40px 40px 40px ;*/
 }
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-child(2){
+
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(2) {
     /*border: 1px solid black;*/
     width: 79vw;
     height: 600px;
@@ -203,31 +229,238 @@ body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-chi
     top: 30px;
 }
 
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-child(1)>div{
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(1) > div {
     position: relative;
     top: 50px;
 }
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(3){
+
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(3) {
     position: relative;
     top: 70px;
     left: 50px;
 }
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(4){
+
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) {
     position: relative;
     top: 100px;
     left: 50px;
 }
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(5){
+
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(5) {
     position: relative;
     top: 120px;
     left: 50px;
 }
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-child(1)>div:nth-child(6){
+
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(1) > div:nth-child(6) {
     position: relative;
     top: 130px;
     left: 50px;
 }
-body > main > div:nth-child(5)>div:nth-child(3)>div>div:nth-child(1)>div:nth-child(2)>table{
+
+body > main > div:nth-child(5) > div:nth-child(3) > div > div:nth-child(1) > div:nth-child(2) > table {
     position: relative;
     top: 50px;
 }
+
+
+/*Contact*/
+body > main > div:nth-child(6) {
+    width: 79vw;
+    height: 90vh;
+    /*border: 1px solid black;*/
+    position: relative;
+    left: 145px;
+}
+
+body > main > div:nth-child(6) > h2 {
+    position: absolute;
+    top: 109px;
+    left: 553px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) {
+    /*border: 1px solid red;*/
+    width: calc(100% / 2);
+    height: 65vh;
+    position: relative;
+    top: 180px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(4) {
+    /*border: 1px solid red;*/
+    width: calc(100% / 2);
+    height: 65vh;
+    position: relative;
+    top: 180px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(1) {
+    position: absolute;
+    width: 400px;
+    height: 88px;
+    top: 40px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(1) > a {
+    position: absolute;
+    left: 110px;
+    top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(1) > pre {
+    position: absolute;
+    right: 110px;
+    top: 45px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(1) > img {
+    position: absolute;
+    left: 46px;
+    top: 10px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(2) {
+    position: absolute;
+    width: 475px;
+    height: 88px;
+    top: 120px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(2) > a {
+    position: absolute;
+    left: 110px;
+    top: 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(2) > pre {
+    position: absolute;
+    right: 130px;
+    top: 45px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(2) > img {
+    position: absolute;
+    left: 46px;
+    top: 10px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(3) {
+    position: absolute;
+    width: 475px;
+    height: 88px;
+    top: 210px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(3) > p:nth-child(1) {
+    position: absolute;
+    left: 110px;
+    top: 3px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(3) > p:nth-child(2) {
+    position: absolute;
+    right: -30px;
+    top: 30px;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(3) > div:nth-child(3) > img {
+    position: absolute;
+    left: 46px;
+    top: 10px;
+}
+
+
+body > main > div:nth-child(6) > div:nth-child(4) > div > form > input:nth-child(1)[type=text] {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 45px;
+    width: 180px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(4) > div > form > input:nth-child(2)[type=text] {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    width: 375px;
+    height: 45px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(4) > div > form > input:nth-child(3)[type=text] {
+    position: absolute;
+    top: 75px;
+    left: 10px;
+    width: 587px;
+    height: 45px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(4) > div > form > textarea:nth-child(4) {
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    width: 587px;
+    height: 220px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(4) > div > form > div:nth-child(5) {
+    border: 1px solid black;
+    background-color: white;
+    position: absolute;
+    top: 385px;
+    left: 10px;
+    width: 150px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+body > main > div:nth-child(6) > div:nth-child(4) > div > form > div:nth-child(5) > button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 120px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+}
+
+body > main > div:nth-child(6) > div:nth-child(4) > div > form > div:nth-child(5) > img {
+    position: absolute;
+    right: 8px;
+    bottom: 7px;
+}
+

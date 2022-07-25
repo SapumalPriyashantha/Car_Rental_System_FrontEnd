@@ -105,11 +105,26 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#Contact">Contact</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="btn " href="#Login" role="button">Login</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="navbarDropdown2"
+                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Login
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#loginCustomer">As a customer</a>
+                        <a class="dropdown-item" href="#loginDriver">As a driver</a>
+                        <a class="dropdown-item" href="#loginAdmin">As a admin</a>
+                    </div>
                 </li>
-                <li class="nav-item active ">
-                    <a class="btn " href="#SignIn" role="button">Sign In</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="navbarDropdown3"
+                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                       aria-expanded="false">Sing In
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="#signInCustomer">As a customer</a>
+                        <a class="dropdown-item" href="#signIndriver">As a driver</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -368,6 +383,53 @@
                 </div>
             </div>
         </div>
+
+    <!--Contact-->
+    <div class="row">
+        <dfn id="Contact"></dfn>
+        <h2>Contact</h2>
+        <div class="col-6">
+            <div>
+                <a href="tel:+94714552361">call us</a>
+                <pre>
+                    +94 (71) 45 54 835
+                </pre>
+                <img alt="call icon" src="assets/icon/call.png" width="40">
+            </div>
+            <div>
+                <a href="mailto:sapumalpriyashantha2000@gmail.com">e mail</a>
+                <pre>
+                    easycarrental@gmail.com
+                </pre>
+                <img alt="e mail icon" src="assets/icon/email.png" width="40">
+            </div>
+            <div>
+                <p>location</p>
+                <p>Sri Lanka - 580/1B Kandy Rd, Kiribathgoda</p>
+                <img alt="location icon" src="assets/icon/place.png" usemap="#place" width="40">
+            </div>
+        </div>
+        <div class="col-6">
+            <div>
+                <form action="">
+                    <!--                    <fieldset>-->
+                    <input placeholder="Name" type="text">
+
+                    <input placeholder="Email" type="text">
+
+                    <input placeholder="Subject" type="text">
+
+                    <textarea placeholder="Message"></textarea>
+
+                    <div>
+                        <button>Send email</button>
+                        <img alt="send icon" src="assets/icon/send.png" width="20">
+                    </div>
+                    <!--                    </fieldset>-->
+                </form>
+            </div>
+        </div>
+    </div>
 </main>
 <footer></footer>
 
