@@ -26,24 +26,7 @@ function saveCustomer() {
     let email=$("#InputEmail1").val();
     let register_date=$("#customer_regi_date").val();
 
-    // console.log(nic);
-    // console.log(user_name);
-    // console.log(password);
-    // console.log(re_password);
-    // console.log(customer_name);
-    // console.log(license_no);
-    // console.log(address);
-    // console.log(con_number);
-    // console.log(email);
-    // console.log(register_date);
-
-
-    // customer={
-    //     "CustomerId": "+ xxxx+ "
-    // }
-    //    data.append("customer",customer)
-
-    let customerOB = {
+    const  customerOB = {
         nic : nic,
         user_name : user_name,
         password :  password,
@@ -55,18 +38,10 @@ function saveCustomer() {
         con_number : con_number,
         email :  email,
         register_date :  register_date
-    }
-
-    // let x= new Blob([JSON.stringify(customerOB)]);
-    // console.log(x);
+    };
 
     if(password==re_password){
-        alert("working");
-       // data.append = ("customer" , new Blob([JSON.stringify(customerOB)], {type : "application/json"}))
-        data.append("customer",JSON.stringify(customerOB));
-
-        // console.log(data);
-
+        data.append("customer", new Blob([JSON.stringify(customerOB)], {type : "application/json"}));
         $.ajax({
             url: customerBaseUrl,
             method: 'post',
@@ -77,7 +52,7 @@ function saveCustomer() {
             success: function (res) {
                 if (res.code == 200) {
                     alert(res.message);
-
+                    clearInputFields();
                 }
             },
             error: function (err) {
@@ -87,5 +62,20 @@ function saveCustomer() {
     }else {
        alert("Password and Retype Password are not matching");
     }
+}
 
+function clearInputFields() {
+    $("#nic").val(null);
+    $("#userName").val(null);
+    $("#password").val(null);
+    $("#retypePassword").val(null);
+    $("#name").val(null);
+    $("#LiNumber").val(null);
+    $("#address").val(null);
+    $("#con_number").val(null);
+    $("#InputEmail1").val(null);
+    $("#customer_regi_date").val(null);
+    $("#customer_regi_dateSelected").val(null);
+    $("#License_image").val(null);
+    $("#nic_img").val(null);
 }
