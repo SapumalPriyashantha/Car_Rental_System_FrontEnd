@@ -497,8 +497,8 @@
                     <div class="col-4">
                         <form>
                             <div class="form-group">
-                                <label for="License image">Add License image</label>
-                                <input type="file" class="form-control-file" id="License image">
+                                <label for="License_image">Add License image</label>
+                                <input type="file" class="form-control-file" id="License_image" name="file">
                             </div>
                         </form>
                     </div>
@@ -506,11 +506,11 @@
                         <form>
                             <div class="form-group">
                                 <label for="nic_img">Add National Identity image</label>
-                                <input type="file" class="form-control-file" id="nic_img">
+                                <input type="file" class="form-control-file" id="nic_img" name="file">
                             </div>
                         </form>
                     </div>
-                    <button type="button" class="btn">Submit</button>
+                    <button type="button" class="btn" id="btnSaveCustomer">Submit</button>
                 </div>
             </form>
         </div>
@@ -521,28 +521,28 @@
         <h2>SignIn Driver</h2>
         <div></div>
         <div>
-            <form>
+            <form id="driverForm">
                 <div class="row">
                     <div class="col-6">
                         <label for="D_nic">NIC Number</label>
-                        <input type="text" class="form-control" placeholder=" Enter National Identity Number" id="D_nic">
+                        <input type="text" class="form-control" placeholder=" Enter National Identity Number" id="D_nic" name="nic">
                     </div>
                     <div class="col-6">
                         <label for="D_name">Full Name</label>
-                        <input type="text" class="form-control" placeholder="Enter Full Name" id="D_name">
+                        <input type="text" class="form-control" placeholder="Enter Full Name" id="D_name" name="driver_name">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-6">
                         <label for="D_license_number">License Number</label>
-                        <input type="text" class="form-control" placeholder=" Enter License Number" id="D_license_number">
+                        <input type="text" class="form-control" placeholder=" Enter License Number" id="D_license_number" name="license_no">
                     </div>
                     <div class="col-6">
                         <label for="D_con_number">Contact Number</label>
-                        <input type="text" class="form-control" placeholder="Enter Contact Number" id="D_con_number">
+                        <input type="text" class="form-control" placeholder="Enter Contact Number" id="D_con_number" name="con_number">
                     </div>
                 </div>
-                <button type="button" class="btn">Submit</button>
+                <button type="button" class="btn" id="btnSaveDriver">Submit</button>
             </form>
         </div>
     </div>
@@ -601,5 +601,8 @@
         $("#signAsaCustomerDiv").css("display", "none");
     });
 </script>
+
+<script src="assets/js/DriverController.js"></script>
+<script src="assets/js/CustomerController.js"></script>
 </body>
 </html>
