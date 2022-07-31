@@ -546,6 +546,159 @@
             </form>
         </div>
     </div>
+
+    <!--login-->
+        <!--login As Admin-->
+        <div>
+            <div>
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+                        <div>
+                            <a class="navbar-brand text-white bg-dark" >Admin Panel</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navBarLoginAsAdmin">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#Addcars">Add Cars</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+
+                <main>
+                    <!--Add Cars-->
+                    <div>
+                        <dfn id="AddCars"></dfn>
+                        <h2>Add Cars</h2>
+                        <div></div>
+                        <div>
+                            <div>
+                                <form>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="nic">Registration Number</label>
+                                            <input type="text" class="form-control" placeholder=" Enter Registration Number" id="CarRegiNum">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">Brand</label>
+                                            <br>
+                                            <select class="form-select form-select-ls" id="dropdown_addCar" aria-label=".form-select-lg example"></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="form-label">Car Type</label>
+                                            <br>
+                                            <select class="form-select form-select-ls" id="dropdown_carType" aria-label=".form-select-lg example"></select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">Car Transmission</label>
+                                            <br>
+                                            <select class="form-select form-select-ls" id="dropdown_carTransmission" aria-label=".form-select-lg example"></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="nic">Car Colour</label>
+                                            <input type="text" class="form-control" placeholder=" Enter Car Colour" id="CarColour">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="nic">Number oF Passengers</label>
+                                            <input type="text" class="form-control" placeholder=" Enter Number oF Passengers" id="NumOfPass">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label class="form-label">Car KM</label>
+                                            <br>
+                                            <select class="form-select form-select-ls" id="dropdown_carKM" aria-label=".form-select-lg example"></select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">Fuel Type</label>
+                                            <br>
+                                            <select class="form-select form-select-ls" id="dropdown_carFuel" aria-label=".form-select-lg example"></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="nic">Daily Rate</label>
+                                            <input type="text" class="form-control" placeholder=" Enter car Daily Rate" id="car_dailyRate">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="nic">Monthly Rate</label>
+                                            <input type="text" class="form-control" placeholder=" Enter car Monthly Rate" id="car_monthlyRate">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="nic">Free Km for day</label>
+                                            <input type="text" class="form-control" placeholder=" Enter car Daily Rate" id="car_freeKmDaily">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="nic">Free Km for monthly</label>
+                                            <input type="text" class="form-control" placeholder=" Enter car Monthly Rate" id="car_freeKmMonthly">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="nic">Price for extra km</label>
+                                            <input type="text" class="form-control" placeholder=" Enter Price for extra km" id="car_priceExtraKm">
+                                        </div>
+                                        <div class="col-6">
+                                            <label class="form-label">Car Status</label>
+                                            <br>
+                                            <select class="form-select form-select-ls" id="dropdown_carStatus" aria-label=".form-select-lg example"></select>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+<!--                                            <form>-->
+                                                <div class="form-group">
+                                                    <label for="Front_image">Add Car Front image</label>
+                                                    <input type="file" class="form-control-file" id="Front_image" name="file">
+                                                </div>
+<!--                                            </form>-->
+                                        </div>
+                                        <div class="col-4">
+<!--                                            <form>-->
+                                                <div class="form-group">
+                                                    <label for="Back_image">Add Car Back image</label>
+                                                    <input type="file" class="form-control-file" id="Back_image" name="file">
+                                                </div>
+<!--                                            </form>-->
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">
+<!--                                            <form>-->
+                                                <div class="form-group">
+                                                    <label for="Right_image">Add Car Right image</label>
+                                                    <input type="file" class="form-control-file" id="Right_image" name="file">
+                                                </div>
+<!--                                            </form>-->
+                                        </div>
+                                        <div class="col-4">
+<!--                                            <form>-->
+                                                <div class="form-group">
+                                                    <label for="Left_image">Add Car Left image</label>
+                                                    <input type="file" class="form-control-file" id="Left_image" name="file">
+                                                </div>
+<!--                                            </form>-->
+                                        </div>
+                                        <div class="col-4">
+                                            <button type="button" class="btn" id="btnSaveCar">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </main>
+            </div>
+        </div>
 </main>
 <footer></footer>
 
@@ -604,5 +757,6 @@
 
 <script src="assets/js/DriverController.js"></script>
 <script src="assets/js/CustomerController.js"></script>
+<script src="assets/js/CarController.js"></script>
 </body>
 </html>
