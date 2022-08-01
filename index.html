@@ -300,7 +300,7 @@
                                     </select>
                                 </div>
                                 <div class="col-4">
-                                    <button type="button" class="btn ">Check</button>
+                                    <button type="button" class="btn " id="btnCheckAvailableCars">Check</button>
                                 </div>
                             </div>
                             <div class="row">
@@ -312,8 +312,8 @@
                                 </form>
                                 <form class="col-6">
                                     <div class="form-group">
-                                        <label for="exampleFormControlFile1">Add Slip File :</label>
-                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                        <label for="slip">Add Slip File :</label>
+                                        <input type="file" class="form-control-file" id="slip">
                                     </div>
                                 </form>
                             </div>
@@ -334,13 +334,13 @@
                                 <form>
                                     <div class="form-row">
                                         <div class="col-4">
-                                            <input type="text" class="form-control" placeholder="User name">
+                                            <input type="text" class="form-control" placeholder="User name" id="cust_userName">
                                         </div>
                                         <div class="col-4">
-                                            <input type="text" class="form-control" placeholder="Password">
+                                            <input type="text" class="form-control" placeholder="Password" id="cust_pasWord">
                                         </div>
                                         <div class="col-4">
-                                            <button type="button" class="btn ">Done</button>
+                                            <button type="button" class="btn " id="btnSaveReservation">Done</button>
                                         </div>
                                     </div>
                                 </form>
@@ -356,25 +356,8 @@
                                     <th scope="col">Transmission</th>
                                 </tr>
                                 </thead>
-                                <tbody>
-                                <tr>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <td>Jacob</td>
-                                    <td>Thornton</td>
-                                    <td>@fat</td>
-                                    <td>@mdo</td>
-                                </tr>
-                                <tr>
-                                    <td>Larry</td>
-                                    <td>the Bird</td>
-                                    <td>@twitter</td>
-                                    <td>@mdo</td>
-                                </tr>
+                                <tbody id="tbl_availableCarsForCustomers">
+
                                 </tbody>
                             </table>
 
@@ -758,5 +741,6 @@
 <script src="assets/js/DriverController.js"></script>
 <script src="assets/js/CustomerController.js"></script>
 <script src="assets/js/CarController.js"></script>
+<script src="assets/js/ReservatinController.js"></script>
 </body>
 </html>
