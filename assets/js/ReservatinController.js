@@ -20,12 +20,6 @@ let reservationId;
 
 
 let waiverPayment=$('#dropdown_carKM option:selected').text();
-// let driverStatus=$('#dropdown_carFuel option:selected').text();
-
-// let freeDaily=$("#car_freeKmDaily").val();
-// let freeMonthly=$("#car_freeKmMonthly").val();
-// let priceExtraKm=$("#car_priceExtraKm").val();
-// let status=$('#dropdown_carStatus option:selected').text();
 
 //check available cars for customer
 $("#btnCheckAvailableCars").click(function () {
@@ -38,13 +32,6 @@ $("#btnCheckAvailableCars").click(function () {
      pickUpTime=$("#time").val();
      carType=$('#type option:selected').text();
      transmission=$('#transmission option:selected').text();
-
-    //  console.log(pickUpdate);
-    // console.log(returnDate);
-    // console.log(todayDate);
-    // console.log(pickUpTime);
-    // console.log(carType);
-    // console.log(transmission);
 
     $.ajax({
         url: carBaseUrl+"/getAvailableCarsForCustomers?pick_up_date="+pickUpdate+"&return_date="+returnDate+"&type="+carType+"&transmission="+transmission,
@@ -68,7 +55,7 @@ function getCarRegistrationId() {
     $("#tbl_availableCarsForCustomers>tr").off();
 
     $("#tbl_availableCarsForCustomers>tr").click(function () {
-        let registrationNumber = $(this).children(":eq(0)").text(); // select first td and get text
+        let registrationNumber = $(this).children(":eq(0)").text(); // select row abd get txt
         getCar(registrationNumber);
     });
 
@@ -94,19 +81,19 @@ function getCar(registrationNumber){
 
 
 
-
+// check driver status
 function checkDriverStatus(){
-    if(document.getElementById('YES').checked) {
+    if(document.getElementById('YES').checked) { //if driver wants
         driverStatus= document.getElementById("YES").value;
-    }else if(document.getElementById('NO').checked) {
+    }else if(document.getElementById('NO').checked) { // if driver do no want
         driverStatus= document.getElementById("NO").value;
     }
 }
 
 function getDriver(driverStatus){
     if(driverStatus == "NO"){
-        driverOB = null;
-    }else {
+        driverOB = null; // assign null for driver object if driver do not want
+    }else { //assign random driver if driver wants
         $.ajax({
             // http://localhost:8080/Car_Rental_System_war/api/v1/driver/getRandomDriver?start_date=2022-10-12&end_date=2022-10-30
             url: driverBaseUrl+"/getRandomDriver?start_date="+pickUpdate+"&end_date="+returnDate,
@@ -122,11 +109,13 @@ function getDriver(driverStatus){
         });
     }
 }
+
+//click btn for save
 $("#btnSaveReservation").click(function () {
     getUserNameAndPassword();
 });
 
-
+// get username and password of customer
 function getUserNameAndPassword() {
      username=$("#cust_userName").val();
      password=$("#cust_pasWord").val();
@@ -145,11 +134,12 @@ function getUserNameAndPassword() {
             }
         },
         error: function (err) {
-            alert("Incorrect username or password, Enter correct username and password");
+            alert("Incorrect username or password, Enter correct username and password"); //if incorrect username , password
         }
     });
 }
 
+//generate reservation Id
 function generateReservationId() {
     $.ajax({
         // http://localhost:8080/Car_Rental_System_war/api/v1/reservation/generateReservationId
@@ -158,7 +148,6 @@ function generateReservationId() {
         success: function (res) {
             if (res.code == 200) {
                reservationId = res.data;
-               //  reservationId = "RE-013";
             }
         },
         error: function (err) {
@@ -167,13 +156,11 @@ function generateReservationId() {
     });
 }
 
+// save reservation
 function saveReservation() {
     var data = new FormData();
     let bank_slip_img = $("#slip")[0].files[0];
     let  bank_slip_img_fileName = $("#slip")[0].files[0].name;
-
-    console.log(bank_slip_img);
-    console.log(bank_slip_img_fileName);
 
     data.append("file", bank_slip_img, bank_slip_img_fileName);
 
@@ -181,7 +168,7 @@ function saveReservation() {
     let reservationStatus = "Pending";
     let reason = "new reservation";
 
-    const  reservationOB = {
+    const  reservationOB = {  // create ob for reservation
         reservation_id : reservationId,
         reservation_date : todayDate,
         pick_up_date :  pickUpdate,
@@ -200,9 +187,8 @@ function saveReservation() {
         driver :driverOB
     };
 
-    console.log(reservationOB);
+    data.append("reservation", new Blob([JSON.stringify(reservationOB)], {type : "application/json"})); //convert js ob to json ob
 
-    data.append("reservation", new Blob([JSON.stringify(reservationOB)], {type : "application/json"}));
     $.ajax({
         url: reservationBaseUrl,
         method: 'post',
@@ -222,12 +208,12 @@ function saveReservation() {
     });
 }
 
+// update car status(Unavailable) if driver select the car
 function updateCarStatus() {
     $.ajax({
         //http://localhost:8080/Car_Rental_System_war/api/v1/car/updateStatusForCar?registration_no=0001&status=unAvailable
         url: carBaseUrl+"/updateStatusForCar?registration_no="+carOB.registration_no+"&status=unAvailable",
         method: "PUT",
-        // dataType:"json", // please convert the response into JSON
         success: function (res) {
             if (res.code == 200) {
                 console.log(res.message);
