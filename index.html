@@ -544,6 +544,17 @@
                                 <li class="nav-item active">
                                     <a class="nav-link" href="#Addcars">Add Cars</a>
                                 </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="adminUpdateDropDown"
+                                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false">Update
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="adminUpdateDropDown">
+                                        <a class="dropdown-item" href="#updateReservationStatus" id="btnUpdateReservationStatus">Update Reservation Status</a>
+                                        <a class="dropdown-item" href="">aaa</a>
+                                        <a class="dropdown-item" href="">bbb</a>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -677,6 +688,60 @@
                             </div>
                         </div>
                     </div>
+                    <!--Update-->
+                    <div>
+                        <!--updateReservationStatus-->
+                        <div>
+                            <dfn id="updateReservationStatus"></dfn>
+                            <h2>Update Reservation Status</h2>
+                            <div></div>
+                            <div>
+                                <div>
+                                    <div class="row">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Reservation Id</th>
+                                                <th scope="col">Pickup Date</th>
+                                                <th scope="col">Return Date</th>
+                                                <th scope="col">Reservation Status</th>
+                                                <th scope="col">Status Reason</th>
+                                                <th scope="col">Car Registration Number</th>
+                                                <th scope="col">Customer NIC</th>
+                                                <th scope="col">Driver NIC</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="tbl_updateReservationStatus">
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <label for="reservation_Id">Reservation Id</label>
+                                            <input type="text" class="form-control"  id="reservation_Id">
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="form-label">Reservation Status</label>
+                                            <br>
+                                            <select class="form-select form-select-ls" id="dropdown_reservationStatus" aria-label=".form-select-lg example"></select>
+                                        </div>
+                                        <div class="col-5">
+                                            <label class="form-label">Status Reason</label>
+                                            <br>
+                                            <select class="form-select form-select-ls" id="dropdown_statusReason" aria-label=".form-select-lg example"></select>
+                                        </div>
+                                        <div class="col-1">
+                                            <button type="button" class="btn" id="btnChangeReservationStatus">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div></div>
+                        <div></div>
+                    </div>
 
 
                 </main>
@@ -742,5 +807,6 @@
 <script src="assets/js/CustomerController.js"></script>
 <script src="assets/js/CarController.js"></script>
 <script src="assets/js/ReservatinController.js"></script>
+<script src="assets/js/AdminController.js"></script>
 </body>
 </html>

@@ -122,6 +122,7 @@ function getUserNameAndPassword() {
 
     $.ajax({
         // http://localhost:8080/Car_Rental_System_war/api/v1/checkLogin/login?user_name=sumith&pass_word=gfgf
+        //http://localhost:8080/Car_Rental_System_war/api/v1/checkLogin/login?user_name=sapumal&pass_word=123
         url:" http://localhost:8080/Car_Rental_System_war/api/v1/checkLogin/login?user_name="+username+"&pass_word="+password,
         method: 'GET',
         success: function (res) {
@@ -166,7 +167,7 @@ function saveReservation() {
 
     let waiverPayment=$("#waiverPayment").val();
     let reservationStatus = "Pending";
-    let reason = "new reservation";
+    let reason = "Admin still dose not check request";
 
     const  reservationOB = {  // create ob for reservation
         reservation_id : reservationId,
