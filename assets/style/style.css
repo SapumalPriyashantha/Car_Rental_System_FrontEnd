@@ -698,36 +698,92 @@ body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>di
 /*update Reservation status*/
 body > main > div:nth-child(9) > div >main>div:nth-child(2){
     position: relative;
+    /*height: 900px;*/
+    /*border: 1px solid red;*/
+}
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1){
+    position: relative;
     height: 900px;
-    border: 1px solid red;
+    /*border: 1px solid brown;*/
 }
 body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)> h2 {
     position: absolute;
     top: 60px;
     left: 420px;
 }
-/*body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(3){*/
-/*    position: absolute;*/
-/*    !*border: 1px solid brown;*!*/
-/*    width: 1050px;*/
-/*    top: 130px;*/
-/*    left: 75px;*/
-/*    height: 755px;*/
-/*    background-color: #e6e8e5;*/
-/*}*/
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(3){
+    position: absolute;
+    /* border: 1px solid brown; */
+    width: 1070px;
+    top: 100px;
+    left: 50px;
+    height: 582px;
+    background-color: #e6e8e5;
+}
 body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(1){
     position: relative;
-    border: 1px solid purple;
+    /*border: 1px solid purple;*/
     width: 1000px;
     top: 100px;
     left: 100px;
     height: 580px;
 }
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(1)>table{
+    position: relative;
+}
 body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2){
     position: relative;
-    border: 1px solid darkgreen;
+    /*border: 1px solid darkgreen;*/
     width: 1000px;
     top: 100px;
     left: 100px;
-    height: 700px;
+    height: 190px;
+}
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div{
+    position: relative;
+    top: 30px;
+}
+
+/*update Driver*/
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2){
+    position: relative;
+    height: 900px;
+    /*border: 1px solid brown;*/
+}
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)> h2 {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+}
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(3){
+    position: absolute;
+    /* border: 1px solid brown; */
+    width: 1185px;
+    top: 110px;
+    left: 15px;
+    height: 635px;
+    background-color: #e6e8e5;
+}
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4){
+    position: relative;
+    height: 750px;
+    width: 1150px;
+    /*border: 1px solid red;*/
+    top: 115px;
+    left: 30px;
+}
+
+/*row01*/
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4)>div:nth-child(1){
+    position: relative;
+    height: 600px;
+    width: 1150px;
+    /*border: 1px solid green;*/
+    left: 15px;
+    top: 10px;
+}
+body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4)>div:nth-child(2)>div{
+    position: relative;
+    top: 40px;
+    left: 220px;
 }

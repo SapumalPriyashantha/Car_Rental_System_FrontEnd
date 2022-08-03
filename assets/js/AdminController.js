@@ -15,6 +15,12 @@ let reservation_Id;
 let reservationStatus;
 let statusReason;
 
+let updateReservationID;
+let updateDriverNIC;
+
+let checkPockUpdate;
+let checkReturndate;
+
 $("#btnUpdateReservationStatus").click(function () {
     setPendingAllReservationToTable();
 });
@@ -69,6 +75,104 @@ function updateReservationStatus() {
         },
         error: function (err) {
             alert(err.message);
+        }
+    });
+}
+
+
+//change driver
+$("#btnUpdateDriver").click(function () {
+    getAllAcceptReservation();
+});
+
+function getAllAcceptReservation() {
+    $("#tbl_changeDriver>tr").empty();
+
+    $.ajax({
+        // http://localhost:8080/Car_Rental_System_war/api/v1/reservation/getAllAcceptReservation
+        url: reservationBaseUrl+"/getAllAcceptReservation",
+        method: 'GET',
+        success: function (res) {
+            if (res.code == 200) {
+                for (const a of res.data) {
+                    let row = `<tr><td>${a.reservation_id}</td><td>${a.pick_up_date}</td><td>${a.return_date}</td><td>${a.reservation_status}</td><td>${a.driver.nic}</td></tr>`;
+                    $("#tbl_changeDriver").append(row);
+                }
+            }
+        },
+        error: function (err) {
+            alert("No such Accept reservation");
+        }
+    });
+}
+
+$("#btnCheckAvailableDrivers").click(function () {
+    getAvailableDrivers();
+});
+
+function getAvailableDrivers() {
+    $("#tbl_changeDriverReservation>tr").empty();
+
+    checkPockUpdate = $("#availableDriverPickUpdate").val();
+    checkReturndate = $("#availableDriverReturnDate").val();
+
+    $.ajax({
+        // http://localhost:8080/Car_Rental_System_war/api/v1/driver/AvailableDrivers?start_date=2022-08-10&end_date=2022-08-17
+        url: driverBaseUrl + "/AvailableDrivers?start_date=" + checkPockUpdate + "&end_date=" + checkReturndate,
+        method: 'GET',
+        success: function (res) {
+            if (res.code == 200) {
+                for (const a of res.data) {
+                    let row = `<tr><td>${a.nic}</td><td>${a.driver_name}</td></tr>`;
+                    $("#tbl_changeDriverReservation").append(row);
+                }
+                getReservationID();
+                getDriverINIC();
+            }
+        },
+        error: function (err) {
+            alert("No such a available drivers");
+        }
+    });
+
+}
+
+function getReservationID() {
+    $("#tbl_changeDriver>tr").off();
+
+    $("#tbl_changeDriver>tr").click(function () {
+        updateReservationID = $(this).children(":eq(0)").text(); // select row abd get txt
+        $("#updateDriverReservation_Id").val(updateReservationID);
+    });
+}
+
+function getDriverINIC() {
+    $("#tbl_changeDriverReservation>tr").off();
+
+    $("#tbl_changeDriverReservation>tr").click(function () {
+        updateDriverNIC = $(this).children(":eq(0)").text(); // select row abd get txt
+        $("#updateDriver_driverNIC").val(updateDriverNIC);
+    });
+}
+
+$("#btnUpdateAvailableDriver").click(function () {
+    updateDriver();
+});
+
+function updateDriver() {
+    $.ajax({
+        // http://localhost:8080/Car_Rental_System_war/api/v1/driver/changeDriverInReservation?reservation_id=re011&driver_nic=D-001
+        url: driverBaseUrl+"/changeDriverInReservation?reservation_id="+updateReservationID+"&driver_nic="+updateDriverNIC,
+        method: 'PUT',
+        success: function (res) {
+            if (res.code == 200) {
+                alert(res.message);
+                getAllAcceptReservation();
+                getAvailableDrivers();
+            }
+        },
+        error: function (err) {
+            alert("No such a available drivers");
         }
     });
 }

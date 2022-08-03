@@ -551,7 +551,7 @@
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="adminUpdateDropDown">
                                         <a class="dropdown-item" href="#updateReservationStatus" id="btnUpdateReservationStatus">Update Reservation Status</a>
-                                        <a class="dropdown-item" href="">aaa</a>
+                                        <a class="dropdown-item" href="#updateDriver" id="btnUpdateDriver">Update Driver</a>
                                         <a class="dropdown-item" href="">bbb</a>
                                     </div>
                                 </li>
@@ -738,8 +738,76 @@
                                 </div>
                             </div>
                         </div>
+                        <!--update Driver-->
+                        <div>
+                            <dfn id="updateDriver"></dfn>
+                            <h2>Update Driver</h2>
+                            <div></div>
+                            <div>
+                                <div class="row">
+                                    <div class="col-7">
+                                        <table class="table table-striped">
+                                            <thead>
+                                            <tr>
+                                                <th scope="col">Reservation Id</th>
+                                                <th scope="col">Pickup Date</th>
+                                                <th scope="col">Return Date</th>
+                                                <th scope="col">Reservation Status</th>
+                                                <th scope="col">Driver NIC</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody id="tbl_changeDriver">
 
-                        <div></div>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="form-row">
+                                            <div class="form-group col-md-5">
+                                                <label for="pickUpdate">Check Pick up Date</label>
+                                                <input id="availableDriverPickUpdate" class="form-control" type="date" />
+<!--                                                <span id="availableDriverstartDateSelected"></span>-->
+                                            </div>
+                                            <div class="form-group col-md-5">
+                                                <label for="returnDate">Check Return Date</label>
+                                                <input id="availableDriverReturnDate" class="form-control" type="date" />
+<!--                                                <span id="availableDriverendDateSelected"></span>-->
+                                            </div>
+                                            <div class="col-2">
+                                                <button type="button" class="btn" id="btnCheckAvailableDrivers">Check</button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">Driver NIC</th>
+                                                    <th scope="col">Driver Name</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody id="tbl_changeDriverReservation">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <label for="updateDriverReservation_Id">Reservation Id</label>
+                                        <input type="text" class="form-control"  id="updateDriverReservation_Id">
+                                    </div>
+                                    <div class="col-3">
+                                        <label for="updateDriver_driverNIC">Driver NIC</label>
+                                        <input type="text" class="form-control"  id="updateDriver_driverNIC">
+                                    </div>
+                                    <div class="col-2">
+                                        <button type="button" class="btn" id="btnUpdateAvailableDriver">Update Driver</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div></div>
                     </div>
 
