@@ -79,3 +79,143 @@ function clearInputFields() {
     $("#License_image").val(null);
     $("#nic_img").val(null);
 }
+
+/////////////////////////////////////////////////////////////////////////////////////
+// customer Panel
+
+let checkCustomerUsername;
+let checkCustomerPassword;
+
+let correctCustomer;
+
+//check customer
+$("#bthCheckLogin").click(function () {
+    // let nic =$("#nic").val();
+    checkCustomerUsername=$("#loginCheckCustomerUserName").val();
+    checkCustomerPassword=$("#loginCheckCustomerPassword").val();
+
+    checkDataIsItVaildCustomer();
+});
+
+function checkDataIsItVaildCustomer() {
+
+    $.ajax({
+        // http://localhost:8080/Car_Rental_System_war/api/v1/customer/getCustomer?userName=sapumal&password=123
+        url: customerBaseUrl + "/getCustomer?userName="+checkCustomerUsername+"&password="+checkCustomerPassword,
+        method: 'GET',
+        success: function (res) {
+            if (res.code == 200) {
+                alert(res.message);
+                correctCustomer=res.data;
+               showCustomerPanel();
+            }
+        },
+        error: function (err) {
+            alert("No such a valid Customer, Enter correct username and password");
+        }
+    });
+}
+
+function showCustomerPanel() {
+    $("#loginCustomerHeader").css("display", "block");
+    // $("#customerReservation").css("display", "block");
+    $("#loginCheckCustomer").css("display", "none");
+}
+
+/////////////////////////////////////
+$("#btnCustomerAcceptReservation").click(function () {
+    // let nic =$("#nic").val();
+    // checkCustomerUsername=$("#loginCheckCustomerUserName").val();
+    // checkCustomerPassword=$("#loginCheckCustomerPassword").val();
+    //
+    // checkDataIsItVaildCustomer();
+    $("#customerReservation").css("display", "block");
+    $("#CustomerDenyReservationsDiv").css("display", "none");
+    $("#CustomerPendingReservationsDiv").css("display", "none");
+    $("#CustomerAcceptReservationsDiv").css("display", "block");
+    loadAllAcceptReservation();
+});
+
+function loadAllAcceptReservation() {
+    $("#tbl_customerAcceptReservation").empty();
+
+    $.ajax({
+        // http://localhost:8080/Car_Rental_System_war/api/v1/reservation/acceptReservation?nic=0001&accept_status=Accept
+        url: reservationBaseUrl + "/acceptReservation?nic="+correctCustomer.nic+"&accept_status=Accept",
+        method: 'GET',
+        success: function (res) {
+            if (res.code == 200) {
+                for (const a of res.data) {
+                    console.log(a);
+                    let row = `<tr><td>${a.reservation_id}</td><td>${a.reservation_date}</td><td>${a.pick_up_date}</td><td>${a.return_date}</td><td>${a.reservation_status}</td><td>${a.reason}</td><td>${a.customer.customer_name}</td><td>${a.car.brand}</td><td>${a.driver.driver_name}</td><td>${a.driver.con_number}</td></tr>`;
+                    $("#tbl_customerAcceptReservation").append(row);
+                }
+            }
+        },
+        error: function (err) {
+            alert(" Accept reservation loading Error.....");
+        }
+    });
+}
+
+///////////////////////////////////////////////////////////////
+$("#btnCustomerPendingReservation").click(function () {
+    $("#customerReservation").css("display", "block");
+    $("#CustomerDenyReservationsDiv").css("display", "none");
+    $("#CustomerAcceptReservationsDiv").css("display", "none");
+    $("#CustomerPendingReservationsDiv").css("display", "block");
+    loadAllPendingReservation();
+});
+
+function loadAllPendingReservation() {
+    $("#tbl_customerPendingReservation").empty();
+
+    $.ajax({
+        // http://localhost:8080/Car_Rental_System_war/api/v1/reservation/pendingReservation?nic=0001&pending_status=Pending
+        url: reservationBaseUrl + "/pendingReservation?nic="+correctCustomer.nic+"&pending_status=Pending",
+        method: 'GET',
+        success: function (res) {
+            if (res.code == 200) {
+                for (const a of res.data) {
+                    console.log(a);
+                    let row = `<tr><td>${a.reservation_id}</td><td>${a.reservation_date}</td><td>${a.pick_up_date}</td><td>${a.return_date}</td><td>${a.reservation_status}</td><td>${a.reason}</td><td>${a.customer.customer_name}</td><td>${a.car.brand}</td><td>${a.driver.driver_name}</td><td>${a.driver.con_number}</td></tr>`;
+                    $("#tbl_customerPendingReservation").append(row);
+                }
+            }
+        },
+        error: function (err) {
+            alert(" Pending reservation loading Error.....");
+        }
+    });
+}
+
+//////////////////////////////////////////////////////////////////////////
+$("#btnCustomerDenyReservation").click(function () {
+    $("#customerReservation").css("display", "block");
+    $("#CustomerDenyReservationsDiv").css("display", "block");
+    $("#CustomerAcceptReservationsDiv").css("display", "none");
+    $("#CustomerPendingReservationsDiv").css("display", "none");
+    loadAllDenyReservation();
+});
+
+function loadAllDenyReservation() {
+    $("#tbl_customerDenyReservation").empty();
+
+    $.ajax({
+        // http://localhost:8080/Car_Rental_System_war/api/v1/reservation/denyReservation?nic=0001&deny_status=Deny
+        url: reservationBaseUrl + "/denyReservation?nic="+correctCustomer.nic+"&deny_status=Deny",
+        method: 'GET',
+        success: function (res) {
+            if (res.code == 200) {
+                for (const a of res.data) {
+                    console.log(a);
+                    let row = `<tr><td>${a.reservation_id}</td><td>${a.reservation_date}</td><td>${a.pick_up_date}</td><td>${a.return_date}</td><td>${a.reservation_status}</td><td>${a.reason}</td><td>${a.customer.customer_name}</td><td>${a.car.brand}</td><td>${a.driver.driver_name}</td><td>${a.driver.con_number}</td></tr>`;
+                    $("#tbl_customerDenyReservation").append(row);
+                }
+            }
+        },
+        error: function (err) {
+            alert(" Deny reservation loading Error.....");
+        }
+    });
+}

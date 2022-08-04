@@ -76,7 +76,7 @@
 </head>
 <body>
 <!--header start-->
-<header>
+<header id="mainHeader">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
         <div>
             <a class="navbar-brand text-white bg-dark" >Easy Car Rental PVT(LTD)</a>
@@ -111,9 +111,9 @@
                        aria-expanded="false">Login
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                        <a class="dropdown-item" href="#loginCustomer">As a customer</a>
-                        <a class="dropdown-item" href="#loginDriver">As a driver</a>
-                        <a class="dropdown-item" href="#loginAdmin">As a admin</a>
+                        <a class="dropdown-item" href="#loginCustomer" id="LoginAsCustomerDropDown">As a customer</a>
+                        <a class="dropdown-item" href="#loginDriver" id="LoginAsDriverDropDown">As a driver</a>
+                        <a class="dropdown-item" href="#loginAdmin" id="LoginAsAdminDropDown">As a admin</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -130,7 +130,7 @@
         </div>
     </nav>
 </header>
-<main class="container-fluid">
+<main class="container-fluid" id="mainMain">
     <!--Home-->
     <div id="homeDiv">
         <dfn id="Home"></dfn>
@@ -531,9 +531,9 @@
     </div>
 
     <!--login-->
-        <!--login As Admin-->
         <div>
-            <div>
+            <!--login As Admin-->
+            <div id="loginAsAdmin">
                 <header>
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
                         <div>
@@ -559,11 +559,10 @@
                         </div>
                     </nav>
                 </header>
-
                 <main>
                     <!--Add Cars-->
                     <div>
-                        <dfn id="AddCars"></dfn>
+                        <dfn id="Addcars"></dfn>
                         <h2>Add Cars</h2>
                         <div></div>
                         <div>
@@ -814,6 +813,232 @@
 
                 </main>
             </div>
+            <!--login As Customer-->
+            <div id="loginAsCustomer">
+                <header id="loginCustomerHeader">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+                        <div>
+                            <a class="navbar-brand text-white bg-dark" >Customer Panel</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navBarLoginAsCustomer">
+                            <ul class="navbar-nav mr-auto">
+<!--                                <li class="nav-item active">-->
+<!--                                    <a class="nav-link" href="#Addcars">Add Cars</a>-->
+<!--                                </li>-->
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="customerReservationDropDown"
+                                       role="button" data-toggle="dropdown" aria-haspopup="true"
+                                       aria-expanded="false">Reservation
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="adminUpdateDropDown">
+                                        <a class="dropdown-item" href="#customerAcceptReservation" id="btnCustomerAcceptReservation">Accept Reservation</a>
+                                        <a class="dropdown-item" href="#customerDenyReservation" id="btnCustomerDenyReservation">Deny Reservation</a>
+                                        <a class="dropdown-item" href="#customerPendingReservation" id="btnCustomerPendingReservation">Pending Resrvation</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <main>
+                    <!--login check customer-->
+                    <div id="loginCheckCustomer">
+                        <div>
+
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="loginCheckCustomerUserName">Customer Username</label>
+                                    <input type="text" class="form-control"  id="loginCheckCustomerUserName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="loginCheckCustomerPassword">Customer Password</label>
+                                    <input type="password" class="form-control"  id="loginCheckCustomerPassword">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <button type="button" class="btn" id="bthCheckLogin">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Reservation-->
+                    <div id="customerReservation">
+                        <!--Accept Reservation-->
+                        <div id="CustomerAcceptReservationsDiv">
+                            <dfn id="customerAcceptReservation"></dfn>
+                            <h2>Accept Reservation</h2>
+                            <div></div>
+                            <div>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Reservation Id</th>
+                                        <th scope="col">Reservation Date</th>
+                                        <th scope="col">Pickup Date</th>
+                                        <th scope="col">Return Date</th>
+                                        <th scope="col">Reservation Status</th>
+                                        <th scope="col">Reason</th>
+                                        <th scope="col">Customer Name</th>
+                                        <th scope="col">Car Brand</th>
+                                        <th scope="col">Driver Name</th>
+                                        <th scope="col">Driver Contact Number</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tbl_customerAcceptReservation">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Deny Reservation-->
+                        <div id="CustomerDenyReservationsDiv">
+                            <dfn id="customerDenyReservation"></dfn>
+                            <h2>Deny Reservation</h2>
+                            <div></div>
+                            <div>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Reservation Id</th>
+                                        <th scope="col">Reservation Date</th>
+                                        <th scope="col">Pickup Date</th>
+                                        <th scope="col">Return Date</th>
+                                        <th scope="col">Reservation Status</th>
+                                        <th scope="col">Reason</th>
+                                        <th scope="col">Customer Name</th>
+                                        <th scope="col">Car Brand</th>
+                                        <th scope="col">Driver Name</th>
+                                        <th scope="col">Driver Contact Number</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tbl_customerDenyReservation">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--Pending Reservation-->
+                        <div id="CustomerPendingReservationsDiv">
+                            <dfn id="customerPendingReservation"></dfn>
+                            <h2>Pending Reservation</h2>
+                            <div></div>
+                            <div>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Reservation Id</th>
+                                        <th scope="col">Reservation Date</th>
+                                        <th scope="col">Pickup Date</th>
+                                        <th scope="col">Return Date</th>
+                                        <th scope="col">Reservation Status</th>
+                                        <th scope="col">Reason</th>
+                                        <th scope="col">Customer Name</th>
+                                        <th scope="col">Car Brand</th>
+                                        <th scope="col">Driver Name</th>
+                                        <th scope="col">Driver Contact Number</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tbl_customerPendingReservation">
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+            <!--login As Driver-->
+            <div id="loginAsDriver">
+                <header id="loginDriverHeader">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+                        <div>
+                            <a class="navbar-brand text-white bg-dark" >Driver Panel</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navBarLoginAsDriver">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                        <a class="nav-link" href="#driverScheduleNavBar" id="btnCheckSchedule">Check Schedule</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
+                <main>
+                    <!--login check Driver-->
+                    <div id="loginCheckDriver">
+                        <div>
+
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="loginCheckDriverUserName">Driver Username</label>
+                                    <input type="text" class="form-control"  id="loginCheckDriverUserName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="loginCheckDriverPassword">Driver Password</label>
+                                    <input type="password" class="form-control"  id="loginCheckDriverPassword">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <button type="button" class="btn" id="bthCheckLoginDriver">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Driver Schedule-->
+                    <div id="DriverSchedule">
+                            <dfn id="driverScheduleNavBar"></dfn>
+                            <h2>Driver Schedule</h2>
+                            <div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3">
+                                        <label for="pickUpdate">Start Date</label>
+                                        <input id="driverScheduleStartDate" class="form-control" type="date" />
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="returnDate">End Date</label>
+                                        <input id="driverScheduleEndDate" class="form-control" type="date" />
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <button type="button" class="btn " id="btnCheckDriverSchedule">Check</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <table class="table table-striped">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">Reservation Id</th>
+                                        <th scope="col">Pickup Date</th>
+                                        <th scope="col">Return Date</th>
+                                        <th scope="col">Pickup Time</th>
+                                        <th scope="col">Reservation Status</th>
+                                        <th scope="col">Customer Name</th>
+                                        <th scope="col">Customer Contact Number</th>
+                                        <th scope="col">Car Registration Number</th>
+                                        <th scope="col">Car Brand</th>
+                                        <th scope="col">Driver Name</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tbl_driverSchedule">
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                    </div>
+
+                </main>
+            </div>
         </div>
 </main>
 <footer></footer>
@@ -868,6 +1093,68 @@
         $("#carBookingDiv").css("display", "none");
         $("#contactDiv").css("display", "none");
         $("#signAsaCustomerDiv").css("display", "none");
+    });
+
+    //login
+    $("#loginAsCustomer").css("display", "none");
+    $("#loginAsAdmin").css("display", "none");
+    $("#loginAsDriver").css("display", "none");
+
+
+    $( "#LoginAsCustomerDropDown" ).click(function() {
+        $("#homeDiv").css("display", "none");
+        $("#aboutUsDiv").css("display", "none");
+        $("#servicesDiv").css("display", "none");
+        $("#carListingDiv").css("display", "none");
+        $("#carBookingDiv").css("display", "none");
+        $("#contactDiv").css("display", "none");
+        $("#signAsaCDriverDiv").css("display", "none");
+        $("#signAsaCustomerDiv").css("display", "none");
+
+        $("#loginAsAdmin").css("display", "none");
+        $("#loginAsDriver").css("display", "none");
+
+        $("#loginCustomerHeader").css("display", "none");
+        $("#loginDriverHeader").css("display", "none");
+
+        $("#customerReservation").css("display", "none");
+        $("#DriverSchedule").css("display", "none");
+
+        $("#loginAsDriver").css("display", "none");
+        $("#mainHeader").css("display", "none");
+
+        $("#loginAsCustomer").css("display", "block");
+
+        // $("#loginCheckCustomer").css("display", "block");
+
+    });
+
+    $( "#LoginAsDriverDropDown" ).click(function() {
+        $("#homeDiv").css("display", "none");
+        $("#aboutUsDiv").css("display", "none");
+        $("#servicesDiv").css("display", "none");
+        $("#carListingDiv").css("display", "none");
+        $("#carBookingDiv").css("display", "none");
+        $("#contactDiv").css("display", "none");
+        $("#signAsaCDriverDiv").css("display", "none");
+        $("#signAsaCustomerDiv").css("display", "none");
+
+        $("#loginAsAdmin").css("display", "none");
+        $("#loginAsCustomer").css("display", "none");
+
+        $("#loginCustomerHeader").css("display", "none");
+        $("#loginDriverHeader").css("display", "none");
+
+        $("#customerReservation").css("display", "none");
+        $("#DriverSchedule").css("display", "none");
+
+        $("#loginAsCustomer").css("display", "none");
+        $("#mainHeader").css("display", "none");
+
+        $("#loginAsDriver").css("display", "block");
+
+        // $("#loginCheckCustomer").css("display", "block");
+
     });
 </script>
 

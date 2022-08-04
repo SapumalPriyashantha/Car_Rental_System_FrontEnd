@@ -599,48 +599,48 @@ body > main > div:nth-child(8) > div:nth-child(4) > form > button:nth-child(3) {
 /*login As Admin*/
 body > main > div:nth-child(9) {
     width: 79vw;
-    height: 150vh;
+    /*height: 150vh;*/
     /*border: 1px solid black;*/
     position: relative;
     left: 145px;
 }
 
-body > main > div:nth-child(9) > div > header > nav {
+body > main > div:nth-child(9) > div:nth-child(1) > header > nav {
     position: relative;
     height: 60px;
 }
 
-body > main > div:nth-child(9) > div > header > nav > div:nth-child(1) {
+body > main > div:nth-child(9) > div:nth-child(1) > header > nav > div:nth-child(1) {
     position: absolute;
     left: 150px;
 }
 
-body > main > div:nth-child(9) > div > header > nav > div:nth-child(1) > a {
+body > main > div:nth-child(9) > div:nth-child(1) > header > nav > div:nth-child(1) > a {
     font-family: Bahnschrift !important;
 }
 
-body > main > div:nth-child(9) > div > header > nav > div:nth-child(2) > ul {
+body > main > div:nth-child(9) > div:nth-child(1) > header > nav > div:nth-child(2) > ul {
     position: absolute;
     right: 150px;
     bottom: 10px;
 }
 
-body > main > div:nth-child(9) > div > header > nav > div:nth-child(2) > ul > li {
+body > main > div:nth-child(9) > div:nth-child(1) > header > nav > div:nth-child(2) > ul > li {
     padding: 0 10px 0 10px;
 }
 
 /*Add Cars*/
-body > main > div:nth-child(9) > div >main>div:nth-child(1){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1){
     position: relative;
     height: 900px;
     /*border: 1px solid red;*/
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) > h2 {
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) > h2 {
     position: absolute;
     top: 60px;
     left: 550px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(3){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(3){
     position: absolute;
     /*border: 1px solid brown;*/
     width: 1050px;
@@ -649,7 +649,7 @@ body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(3){
     height: 755px;
     background-color: #e6e8e5;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form{
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form{
     position: relative;
     /*border: 1px solid purple;*/
     width: 1000px;
@@ -657,61 +657,61 @@ body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>di
     left: 100px;
     height: 700px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(2){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(2){
     position: relative;
     top: 10px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(3){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(3){
     position: relative;
     top: 20px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(4){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(4){
     position: relative;
     top: 30px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(5){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(5){
     position: relative;
     top: 40px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(6){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(6){
     position: relative;
     top: 50px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(7){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(7){
     position: relative;
     top: 60px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(8){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(8){
     position: relative;
     top: 70px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(9){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(9){
     position: relative;
     top: 80px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(9)>div:nth-child(3){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(1) >div:nth-child(4)>div:nth-child(1)>form>div:nth-child(9)>div:nth-child(3){
     position: relative;
     top: 30px;
 }
 
 
 /*update Reservation status*/
-body > main > div:nth-child(9) > div >main>div:nth-child(2){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2){
     position: relative;
     /*height: 900px;*/
     /*border: 1px solid red;*/
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(1){
     position: relative;
     height: 900px;
     /*border: 1px solid brown;*/
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)> h2 {
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(1)> h2 {
     position: absolute;
     top: 60px;
     left: 420px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(3){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(3){
     position: absolute;
     /* border: 1px solid brown; */
     width: 1070px;
@@ -720,7 +720,7 @@ body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>di
     height: 582px;
     background-color: #e6e8e5;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(1){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(1){
     position: relative;
     /*border: 1px solid purple;*/
     width: 1000px;
@@ -728,10 +728,10 @@ body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>di
     left: 100px;
     height: 580px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(1)>table{
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(1)>table{
     position: relative;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2){
     position: relative;
     /*border: 1px solid darkgreen;*/
     width: 1000px;
@@ -739,23 +739,23 @@ body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>di
     left: 100px;
     height: 190px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div{
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(1)>div:nth-child(4)>div:nth-child(1)>div:nth-child(2)>div{
     position: relative;
     top: 30px;
 }
 
 /*update Driver*/
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(2){
     position: relative;
     height: 900px;
     /*border: 1px solid brown;*/
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)> h2 {
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(2)> h2 {
     position: absolute;
     top: 60px;
     left: 500px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(3){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(3){
     position: absolute;
     /* border: 1px solid brown; */
     width: 1185px;
@@ -764,7 +764,7 @@ body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>di
     height: 635px;
     background-color: #e6e8e5;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4){
     position: relative;
     height: 750px;
     width: 1150px;
@@ -774,7 +774,7 @@ body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>di
 }
 
 /*row01*/
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4)>div:nth-child(1){
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4)>div:nth-child(1){
     position: relative;
     height: 600px;
     width: 1150px;
@@ -782,8 +782,206 @@ body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>di
     left: 15px;
     top: 10px;
 }
-body > main > div:nth-child(9) > div >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4)>div:nth-child(2)>div{
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(2)>div:nth-child(4)>div:nth-child(2)>div{
     position: relative;
     top: 40px;
     left: 220px;
+}
+
+
+/*login As customer*/
+body > main > div:nth-child(9) > div:nth-child(2) > header > nav {
+    position: fixed;
+    height: 60px;
+}
+
+body > main > div:nth-child(9) > div:nth-child(2) > header > nav > div:nth-child(1) {
+    position: absolute;
+    left: 150px;
+}
+
+body > main > div:nth-child(9) > div:nth-child(2) > header > nav > div:nth-child(1) > a {
+    font-family: Bahnschrift !important;
+}
+
+body > main > div:nth-child(9) > div:nth-child(2) > header > nav > div:nth-child(2) > ul {
+    position: absolute;
+    right: 150px;
+    bottom: 10px;
+}
+
+body > main > div:nth-child(9) > div:nth-child(2) > header > nav > div:nth-child(2) > ul > li {
+    padding: 0 10px 0 10px;
+}
+
+
+
+
+/*check Login customer*/
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(1){
+    /*border: 1px solid green;*/
+    position: relative;
+    height: 400px;
+}
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(1)>div:nth-child(1){
+
+}
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(1)>div:nth-child(2){
+    position: relative;
+    /*border: 1px solid red;*/
+    background-color: #e6e8e5;
+    height: 215px;
+    top: 145px;
+}
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(1)>div:nth-child(2)>div{
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+/*accept reservation*/
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(1){
+    position: relative;
+    height: 700px;
+    border: 1px solid black;
+}
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(1)> h2 {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+}
+/*body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(1)>div:nth-child(3){*/
+/*    position: absolute;*/
+/*    !* border: 1px solid brown; *!*/
+/*    width: 1185px;*/
+/*    top: 110px;*/
+/*    left: 15px;*/
+/*    height: 635px;*/
+/*    background-color: #e6e8e5;*/
+/*}*/
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(1)>div:nth-child(4){
+    position: relative;
+    height: 570px;
+    width: 1150px;
+    border: 1px solid red;
+    top: 115px;
+    left: 30px;
+}
+
+/*deny reservation*/
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(2){
+    position: relative;
+    height: 700px;
+    border: 1px solid black;
+}
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(2)> h2 {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+}
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(2)>div:nth-child(4){
+    position: relative;
+    height: 570px;
+    width: 1150px;
+    border: 1px solid red;
+    top: 115px;
+    left: 30px;
+}
+
+/*pending reservation*/
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(3){
+    position: relative;
+    height: 700px;
+    border: 1px solid black;
+}
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(3)> h2 {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+}
+body > main > div:nth-child(9) > div:nth-child(2) >main>div:nth-child(2)>div:nth-child(3)>div:nth-child(4){
+    position: relative;
+    height: 570px;
+    width: 1150px;
+    border: 1px solid red;
+    top: 115px;
+    left: 30px;
+}
+
+
+
+
+/*login As driver*/
+body > main > div:nth-child(9) > div:nth-child(3) > header > nav {
+    position: fixed;
+    height: 60px;
+}
+
+body > main > div:nth-child(9) > div:nth-child(3) > header > nav > div:nth-child(1) {
+    position: absolute;
+    left: 150px;
+}
+
+body > main > div:nth-child(9) > div:nth-child(3) > header > nav > div:nth-child(1) > a {
+    font-family: Bahnschrift !important;
+}
+
+body > main > div:nth-child(9) > div:nth-child(3) > header > nav > div:nth-child(2) > ul {
+    position: absolute;
+    right: 150px;
+    bottom: 10px;
+}
+
+body > main > div:nth-child(9) > div:nth-child(3) > header > nav > div:nth-child(2) > ul > li {
+    padding: 0 10px 0 10px;
+}
+
+
+
+
+/*check Login driver*/
+body > main > div:nth-child(9) > div:nth-child(3) >main>div:nth-child(1){
+    /*border: 1px solid green;*/
+    position: relative;
+    height: 400px;
+}
+body > main > div:nth-child(9) > div:nth-child(3) >main>div:nth-child(1)>div:nth-child(1){
+
+}
+body > main > div:nth-child(9) > div:nth-child(3) >main>div:nth-child(1)>div:nth-child(2){
+    position: relative;
+    /*border: 1px solid red;*/
+    background-color: #e6e8e5;
+    height: 215px;
+    top: 145px;
+}
+body > main > div:nth-child(9) > div:nth-child(3) >main>div:nth-child(1)>div:nth-child(2)>div{
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+/*driver shedule*/
+
+body > main > div:nth-child(9) > div:nth-child(3) >main>div:nth-child(2){
+    position: relative;
+    height: 700px;
+    border: 1px solid black;
+}
+body > main > div:nth-child(9) > div:nth-child(3) >main>div:nth-child(2)> h2 {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+}
+body > main > div:nth-child(9) > div:nth-child(3) >main>div:nth-child(2)>div:nth-child(3){
+    position: relative;
+    /* height: 570px; */
+    /* width: 1150px; */
+    /* border: 1px solid red; */
+    top: 115px;
+    left: 100px;
+}
+body > main > div:nth-child(9) > div:nth-child(3) >main>div:nth-child(2)>div:nth-child(4){
+    position: relative;
+    top: 130px;
 }
