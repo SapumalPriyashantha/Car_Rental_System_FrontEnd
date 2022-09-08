@@ -606,7 +606,7 @@ body > main > div:nth-child(9) {
 }
 
 body > main > div:nth-child(9) > div:nth-child(1) > header > nav {
-    position: relative;
+    position: fixed;
     height: 60px;
 }
 
@@ -787,6 +787,77 @@ body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nt
     top: 40px;
     left: 220px;
 }
+
+
+
+
+/*Other Updates*/
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(3){
+    position: relative;
+    height: 900px;
+    /*border: 1px solid brown;*/
+}
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(3)> h2 {
+    position: absolute;
+    top: 60px;
+    left: 500px;
+}
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(2) >div:nth-child(3)>div:nth-child(4)>div:nth-child(1){
+    position: relative;
+    top: 120px;
+}
+
+
+
+
+
+/*check Login admin*/
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(3){
+    /*border: 1px solid green;*/
+    position: relative;
+    height: 400px;
+}
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(3)>div:nth-child(1){
+
+}
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(3)>div:nth-child(2){
+    position: relative;
+    /*border: 1px solid red;*/
+    background-color: #e6e8e5;
+    height: 215px;
+    top: 145px;
+}
+body > main > div:nth-child(9) > div:nth-child(1) >main>div:nth-child(3)>div:nth-child(2)>div{
+    position: relative;
+    left: 40px;
+    top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*login As customer*/

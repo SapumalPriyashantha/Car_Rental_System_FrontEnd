@@ -534,7 +534,7 @@
         <div>
             <!--login As Admin-->
             <div id="loginAsAdmin">
-                <header>
+                <header id="loginAdminHeader">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
                         <div>
                             <a class="navbar-brand text-white bg-dark" >Admin Panel</a>
@@ -542,7 +542,7 @@
                         <div class="collapse navbar-collapse" id="navBarLoginAsAdmin">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#Addcars">Add Cars</a>
+                                    <a class="nav-link" href="#Addcars" id="btnAddCars">Add Cars</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle text-white bg-dark" href="#" id="adminUpdateDropDown"
@@ -552,7 +552,7 @@
                                     <div class="dropdown-menu" aria-labelledby="adminUpdateDropDown">
                                         <a class="dropdown-item" href="#updateReservationStatus" id="btnUpdateReservationStatus">Update Reservation Status</a>
                                         <a class="dropdown-item" href="#updateDriver" id="btnUpdateDriver">Update Driver</a>
-                                        <a class="dropdown-item" href="">bbb</a>
+                                        <a class="dropdown-item" href="#otherUpdates" id="btnOtherUpdates">Other Updates</a>
                                     </div>
                                 </li>
                             </ul>
@@ -561,7 +561,7 @@
                 </header>
                 <main>
                     <!--Add Cars-->
-                    <div>
+                    <div id="AddCar">
                         <dfn id="Addcars"></dfn>
                         <h2>Add Cars</h2>
                         <div></div>
@@ -688,9 +688,9 @@
                         </div>
                     </div>
                     <!--Update-->
-                    <div>
+                    <div id="update">
                         <!--updateReservationStatus-->
-                        <div>
+                        <div id="AdminUpdateReservationStatus">
                             <dfn id="updateReservationStatus"></dfn>
                             <h2>Update Reservation Status</h2>
                             <div></div>
@@ -738,7 +738,7 @@
                             </div>
                         </div>
                         <!--update Driver-->
-                        <div>
+                        <div id="AdminUpdateDriver">
                             <dfn id="updateDriver"></dfn>
                             <h2>Update Driver</h2>
                             <div></div>
@@ -806,11 +806,115 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Other Updates-->
+                        <div id="AdminUpdateOtherUpdates">
+                            <dfn id="otherUpdates"></dfn>
+                            <h2>Other Updates</h2>
+                            <div></div>
+                            <div>
+                                <div class="row">
 
-                        <div></div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="updateOtherCarRegistrationId">Car Registration ID</label>
+                                                <input type="text" class="form-control"  id="updateOtherCarRegistrationId">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="UpdateOtherTotalCarKm">Enter Update Km</label>
+                                                <input type="text" class="form-control"  id="UpdateOtherTotalCarKm">
+                                            </div>
+                                            <div class="col-4">
+                                                <label  for="updateOtherCarStatus">Select Car Status</label>
+                                                <select  id="updateOtherCarStatus">
+                                                    <option selected>Type...</option>
+                                                    <option value="1">Available</option>
+                                                    <option value="2">unAvailable</option>
+                                                    <option value="3">Damage</option>
+                                                </select>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <label for="updateOtherReservationId">Reservation Id</label>
+                                                <input type="text" class="form-control"  id="updateOtherReservationId">
+                                            </div>
+                                            <div class="col-4">
+                                                <label  for="updateOtherReservationStatus">Select Reservation Status</label>
+                                                <select  id="updateOtherReservationStatus">
+                                                    <option selected>Type...</option>
+                                                    <option value="1">Completed</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-4">
+                                                <label  for="updateOtherReservationStatusReason">Select Reservation Status Reason</label>
+                                                <select  id="updateOtherReservationStatusReason">
+                                                    <option selected>Type...</option>
+                                                    <option value="1">Completed</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="form-group col-md-6">
+                                                <label for="updateOtherReturnDate">Select Return Date</label>
+                                                <input id="updateOtherReturnDate" class="form-control" type="date" />
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">Registration ID</th>
+                                                    <th scope="col">Pickup Date</th>
+                                                    <th scope="col">Return Date</th>
+                                                    <th scope="col">Reservation Status</th>
+                                                    <th scope="col">Reservation Reason</th>
+                                                    <th scope="col">Car Registration Number</th>
+                                                    <th scope="col">Car Status</th>
+                                                    <th scope="col">Car KM</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody id="tbl_OtherUpdate">
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--login check Admin-->
+                    <div id="loginCheckAdmin">
+                        <div>
 
-
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="loginCheckAdminUserName">Admin Username</label>
+                                    <input type="text" class="form-control"  id="loginCheckAdminUserName">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <label for="loginCheckAdminPassword">Admin Password</label>
+                                    <input type="password" class="form-control"  id="loginCheckAdminPassword">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-2">
+                                    <button type="button" class="btn" id="bthCheckLoginAdmin">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </main>
             </div>
             <!--login As Customer-->
@@ -1116,11 +1220,16 @@
 
         $("#loginCustomerHeader").css("display", "none");
         $("#loginDriverHeader").css("display", "none");
+        $("#loginAdminHeader").css("display", "none");
 
         $("#customerReservation").css("display", "none");
         $("#DriverSchedule").css("display", "none");
+        $("#update").css("display", "none");
+        $("#AddCar").css("display", "none");
 
         $("#loginAsDriver").css("display", "none");
+        $("#loginCheckAdmin").css("display", "none");
+
         $("#mainHeader").css("display", "none");
 
         $("#loginAsCustomer").css("display", "block");
@@ -1144,14 +1253,52 @@
 
         $("#loginCustomerHeader").css("display", "none");
         $("#loginDriverHeader").css("display", "none");
+        $("#loginAdminHeader").css("display", "none");
 
         $("#customerReservation").css("display", "none");
         $("#DriverSchedule").css("display", "none");
+        $("#update").css("display", "none");
+        $("#AddCar").css("display", "none");
 
         $("#loginAsCustomer").css("display", "none");
+        $("#loginCheckAdmin").css("display", "none");
+
         $("#mainHeader").css("display", "none");
 
         $("#loginAsDriver").css("display", "block");
+
+        // $("#loginCheckCustomer").css("display", "block");
+
+    });
+
+    $( "#LoginAsAdminDropDown" ).click(function() {
+        $("#homeDiv").css("display", "none");
+        $("#aboutUsDiv").css("display", "none");
+        $("#servicesDiv").css("display", "none");
+        $("#carListingDiv").css("display", "none");
+        $("#carBookingDiv").css("display", "none");
+        $("#contactDiv").css("display", "none");
+        $("#signAsaCDriverDiv").css("display", "none");
+        $("#signAsaCustomerDiv").css("display", "none");
+
+        $("#loginAsDriver").css("display", "none");
+        $("#loginAsCustomer").css("display", "none");
+
+        $("#loginCustomerHeader").css("display", "none");
+        $("#loginDriverHeader").css("display", "none");
+        $("#loginAdminHeader").css("display", "none");
+
+        $("#customerReservation").css("display", "none");
+        $("#DriverSchedule").css("display", "none");
+        $("#update").css("display", "none");
+        $("#AddCar").css("display", "none");
+
+        $("#loginAsCustomer").css("display", "none");
+        $("#loginAsDriver").css("display", "none");
+
+        $("#mainHeader").css("display", "none");
+
+        $("#loginAsAdmin").css("display", "block");
 
         // $("#loginCheckCustomer").css("display", "block");
 

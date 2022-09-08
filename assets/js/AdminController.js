@@ -1,3 +1,6 @@
+
+var adminBaseUrl = "http://localhost:8080/Car_Rental_System_war/api/v1/admin";
+
 // Admin Change Reservation status
 $("#dropdown_reservationStatus").append('<option>' + 'Select Reservation Status' + '</option>');
 $("#dropdown_reservationStatus").append('<option>' + 'Accept' + '</option>');
@@ -176,3 +179,84 @@ function updateDriver() {
         }
     });
 }
+
+///////////////////////////////////////////////////////////////
+//update status car
+//update km car
+//update reservation status
+
+// Admin Panel
+
+let checkAdminUsername;
+let checkAdminPassword;
+
+let correctAdmin;
+
+//check customer
+$("#bthCheckLoginAdmin").click(function () {
+    // let nic =$("#nic").val();
+    checkAdminUsername=$("#loginCheckAdminUserName").val();
+    checkAdminPassword=$("#loginCheckAdminPassword").val();
+
+    checkDataIsItVaildAdmin();
+});
+
+function checkDataIsItVaildAdmin() {
+
+    $.ajax({
+        // http://localhost:8080/Car_Rental_System_war/api/v1/admin/getAdmin?userName=yashodara&password=yasho1234
+        url: adminBaseUrl + "/getAdmin?userName="+checkAdminUsername+"&password="+checkAdminPassword,
+        method: 'GET',
+        success: function (res) {
+            if (res.code == 200) {
+                alert(res.message);
+                correctAdmin=res.data;
+                console.log(correctAdmin);
+                showAdminPanel();
+            }
+        },
+        error: function (err) {
+            alert("No such a valid Admin, Enter correct username and password");
+        }
+    });
+}
+
+function showAdminPanel() {
+    $("#loginAdminHeader").css("display", "block");
+    // $("#customerReservation").css("display", "block");
+    $("#loginCheckAdmin").css("display", "none");
+}
+
+///////////////////////////////////////////////////////////////
+$("#btnAddCars").click(function () {
+    $("#AddCar").css("display", "block");
+    $("#update").css("display", "none");
+    $("#loginCheckAdmin").css("display", "none");
+});
+
+$("#btnUpdateReservationStatus").click(function () {
+    $("#AdminUpdateReservationStatus").css("display", "block");
+    $("#update").css("display", "block");
+    $("#AddCar").css("display", "none");
+    $("#AdminUpdateDriver").css("display", "none");
+    $("#AdminUpdateOtherUpdates").css("display", "none");
+    $("#loginCheckAdmin").css("display", "none");
+});
+
+$("#btnUpdateDriver").click(function () {
+    $("#AdminUpdateDriver").css("display", "block");
+    $("#update").css("display", "block");
+    $("#AddCar").css("display", "none");
+    $("#AdminUpdateReservationStatus").css("display", "none");
+    $("#AdminUpdateOtherUpdates").css("display", "none");
+    $("#loginCheckAdmin").css("display", "none");
+});
+
+$("#btnOtherUpdates").click(function () {
+    $("#AdminUpdateOtherUpdates").css("display", "block");
+    $("#update").css("display", "block");
+    $("#AddCar").css("display", "none");
+    $("#AdminUpdateDriver").css("display", "none");
+    $("#AdminUpdateReservationStatus").css("display", "none");
+    $("#loginCheckAdmin").css("display", "none");
+});
